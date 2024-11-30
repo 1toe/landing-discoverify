@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import PhonePreview from '../components/PhonePreview.astro';
+---
+
+<Layout title="Terranuova - Transform Your Digital Experience">
+  <main class="min-h-screen bg-gradient-to-br from-green-900 to-green-500">
+    <div class="max-w-6xl mx-auto px-4 py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-6xl font-bold text-white mb-6">
+            Introducing<br />Terranuova.
+          </h1>
+          <p class="text-white/90 text-xl mb-8 max-w-lg">
+            This is a single page website that can easily be adapted for any kind of mobile or web product. This part should be a short description of the product and it should be pretty short.
+          </p>
+          <div class="flex gap-4">
+            <Button href="#" variant="secondary" icon="▶">
+              View Live Demo
+            </Button>
+            <Button href="#" icon="↓">
+              Download the App
+            </Button>
+          </div>
+        </div>
+        <div class="flex justify-center lg:justify-end">
+          <PhonePreview />
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    --accent: 74, 222, 128;
+    --accent-light: 134, 239, 172;
+    --accent-dark: 21, 128, 61;
+  }
+</style>

@@ -1,0 +1,76 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<div class="min-h-screen bg-gradient-to-br from-[#191414] to-[#1DB954] text-white">
+  <div class="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+    <!-- Left Content -->
+    <div class="flex-1 text-center lg:text-left">
+      <h1 class="text-5xl lg:text-7xl font-bold mb-6">
+        Introducing
+        <br />
+        Discoverify.
+      </h1>
+      <p class="text-lg mb-8 text-gray-200 max-w-xl">
+       
+      </p>
+    </div>
+
+    <!-- Right Content - Phone Mockup -->
+    <div class="flex-1 max-w-sm lg:max-w-md">
+      <div class="relative">
+        <!-- Phone Frame -->
+        <div class="bg-white rounded-[3rem] p-4 shadow-2xl">
+          <!-- App Screenshot -->
+          <div class="bg-[#191414] rounded-[2.5rem] overflow-hidden">
+            <!-- App Header -->
+            <div class="bg-gradient-to-r from-[#1DB954] to-[#1ed760] p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-semibold">Home</span>
+                <Icon name="mdi:magnify" class="w-6 h-6" />
+              </div>
+            </div>
+
+            <!-- App Content -->
+            <div class="p-4">
+              <!-- Navigation Pills -->
+              <div class="flex gap-4 text-sm mb-4 text-gray-400">
+                <span class="text-white">Most Popular</span>
+                <span>Featured</span>
+                <span>Top Sellers</span>
+              </div>
+
+              <!-- Profile Card -->
+              <div class="bg-[#282828] rounded-lg p-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-16 h-16 bg-gray-600 rounded-full mb-2">
+                    <img
+                      src="/placeholder.svg?height=64&width=64"
+                      alt="Profile"
+                      class="w-full h-full rounded-full object-cover"
+                    />
+                  </div>
+                  <h3 class="text-lg font-semibold">Mark Robertson</h3>
+                  <p class="text-sm text-gray-400 mb-2">
+                    San Francisco, California
+                  </p>
+                  <!-- Rating Stars -->
+                  <div class="flex gap-1 mb-4">
+                    {[1, 2, 3, 4].map(() => (
+                      <Icon name="mdi:star" class="w-5 h-5 text-[#1DB954]" />
+                    ))}
+                    <Icon name="mdi:star-outline" class="w-5 h-5 text-gray-600" />
+                  </div>
+                  <button class="w-full border border-[#1DB954] text-[#1DB954] hover:bg-[#1DB954] hover:text-white font-bold py-2 px-4 rounded">
+                    FOLLOW STORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
