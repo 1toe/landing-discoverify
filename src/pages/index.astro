@@ -4,28 +4,28 @@ import Button from '../components/Button.astro';
 import PhonePreview from '../components/PhonePreview.astro';
 ---
 
-<Layout title="Terranuova - Transform Your Digital Experience">
-  <main class="min-h-screen bg-gradient-to-br from-green-900 to-green-500">
+<Layout title="Discoverify 🐍💿">
+  <main class="min-h-screen bg-gradient-to-br from-green-900 to-green-700">
     <div class="max-w-6xl mx-auto px-4 py-24">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <h1 class="text-6xl font-bold text-white mb-6">
-            Introducing<br />Terranuova.
+            Presentamos<br />Discoverify.
           </h1>
           <p class="text-white/90 text-xl mb-8 max-w-lg">
-            This is a single page website that can easily be adapted for any kind of mobile or web product. This part should be a short description of the product and it should be pretty short.
+            Matchea la música.
           </p>
           <div class="flex gap-4">
-            <Button href="#" variant="secondary" icon="▶">
-              View Live Demo
-            </Button>
-            <Button href="#" icon="↓">
-              Download the App
+            <Button href="https://www.dropbox.com/scl/fi/xakgmr7f4gaob5qdqwmi7/Discoverify.apk?rlkey=gh8l6hwwqx2p415g1exhlh91e&st=efldnghg&dl=1" icon="↓">
+              Descargarla ahora
             </Button>
           </div>
         </div>
-        <div class="flex justify-center lg:justify-end">
+        <div class="flex justify-center lg:justify-end relative">
           <PhonePreview />
+          <div class="absolute top-0 right-0 mt-4 mr-4 w-32 h-32 lg:w-64 lg:h-64"></div>
+            <img src="icon/qr-code.png" alt="QR Code" class="w-full h-full" />
+          </div>
         </div>
       </div>
     </div>
